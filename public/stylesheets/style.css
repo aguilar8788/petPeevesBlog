@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -54,4 +54,18 @@ a {
 
 .edit_buttons a{
   margin-right: 10px;
+}
+
+.indexImage {
+
+  margin-top: 10px;
+
+}
+
+.indexContainer {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
