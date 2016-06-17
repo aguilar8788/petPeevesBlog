@@ -3,8 +3,26 @@
   <head>
     <title>{{title}}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+  <script   src="https://code.jquery.com/jquery-3.0.0.js"   integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo="   crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+
   </head>
   <body>
+    <nav>
+
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo center">{{title}}</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/add">Add New Post</a></li>
+        <li><a href="/feed">See Posts</a></li>
+      </ul>
+    </div>
+  </nav>
     {{{body}}}
   </body>
 </html>

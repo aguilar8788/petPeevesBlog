@@ -6,3 +6,52 @@ body {
 a {
   color: #00B7FF;
 }
+
+.likes{
+  margin-bottom: -30px;
+  margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;;
+  width: 20px;
+
+}
+
+
+
+.dis{
+  text-align: center;
+  width:35px;;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+
+}
+
+.dislikes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}
+
+.conatiner{
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.edit_buttons {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+}
+
+.edit_buttons a{
+  margin-right: 10px;
+}

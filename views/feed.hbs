@@ -1,0 +1,13 @@
+
+<div class="container">
+     <!-- Page Content goes here -->
+
+<ul>
+  {{#each petpeeves}}
+  <li>
+    <h3>{{this.title}}</h3>
+    <a href="/{{this.id}}">&gtread more</a>
+  </li>
+  {{/each}}
+</ul>
+</div>

@@ -1,0 +1,49 @@
+<div class="container">
+    <h3>{{petpeeve.title}}</h3>
+    <br>
+    <img src="{{petpeeve.image}}" />
+    <p>{{petpeeve.description}}</p>
+    <br>
+    <div class="likes">
+        <p class="dis">{{petpeeve.dislikes}}</p>
+    </div>
+    <div class="edit_buttons">
+        <a href="#" class="dislikes">Dislike</a>
+        <a href="/{{petpeeve.id}}/edit"><p>edit</p></a>
+        <a href="/{{petpeeve.id}}/delete"><p>delete</p></a>
+    </div>
+
+    <br>
+    <form action="/comment" method="post" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+          <input type="text" name="comment" value="" placeholder="add comment">
+          <button type="submit" name="">submit comment</button>
+        </div>
+    </div>
+    </form>
+    <ul>
+      {{#each comments}}
+      <li>
+        <h5>{{this}}</h5>
+      </li>
+      {{/each}}
+    </ul>
+</div>
+
+<script>
+  var counter = $('.dis').html();
+  var currentDislikes = $('.dis').html();
+  $(document).ready(function(){
+
+    $('.dislikes').on('click', function(){
+
+    counter++;
+
+    $('.dis').empty();
+    $('.dis').append(counter);
+    $.post('/dislike', {dislikes: $('.dis').text()}, function(data){
+    })
+  })
+})
+</script>
